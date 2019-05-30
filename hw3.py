@@ -19,7 +19,7 @@ for i in lista:
 
     modified= os.stat(DIR+i).st_mtime
     fech = datetime.fromtimestamp(modified)
-    fecha = fech.strftime("%b-%Y")
+    fecha = fech.strftime("%Y-%m")
     src = DIR + i                       # source archivo a copiar
     dst = dir_ord+fecha                 # destination
 
